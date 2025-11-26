@@ -1,0 +1,22 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+
+
+fun main() {
+    
+    val name="hello kotlin"
+    var count=0
+    
+    for(i in name)
+    {
+        if(i=='a' ||i =='e' ||i =='i' || i =='o' || i=='u')
+        {
+            count++
+        }
+    }
+    
+    println(count)
+      
+}
