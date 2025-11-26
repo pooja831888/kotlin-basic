@@ -1,0 +1,29 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+
+// maximum element in array
+
+fun main() {
+    
+    val arr=intArrayOf(10,20,30,40,50)
+    var left=0
+    var right=arr.size-1
+    
+    while(left<right)
+    {
+        val temp=arr[left]
+        arr[left]=arr[right]
+        arr[right]=temp
+        left++
+        right--
+    }
+    
+    for(i in arr)
+    {
+        println(i)
+    }
+      
+    
+}
