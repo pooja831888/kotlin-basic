@@ -1,0 +1,22 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+
+
+fun main() {
+    
+    val arr=arrayOf(10,20,30,20)
+    val unique=mutableListOf<Int>()
+    
+    for(i in arr)
+    {
+        if(!unique.contains(i))
+        {
+            unique.add(i)
+        }
+    }
+    
+    print(unique)
+          
+}
