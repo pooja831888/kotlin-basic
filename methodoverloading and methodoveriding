@@ -1,0 +1,35 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+// method overloading and overriding
+
+open class cal{
+    fun add(a:Int,b:Int)=a+b
+    fun add(a:Int,b:Int,c:Int)=a+b+c
+    
+    open fun add(name:String):String{
+        return name
+    }
+}
+class ch:cal(){
+    override fun add(name:String):String
+    {
+        return "no"
+    }
+}
+
+fun main()
+{
+    val cl=cal()
+    val c=ch()
+    println(cl.add(2,3))
+    println(cl.add(2,3,4))
+    println(c.add("pooja"))
+}
+
+
+
+
+
+
