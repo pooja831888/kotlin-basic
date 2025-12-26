@@ -1,0 +1,23 @@
+interface animal{
+    fun caneat()
+}
+
+interface puppy{
+    fun cansee()
+}
+
+class dog:animal,puppy{
+    override fun caneat(){
+        println("yes can eat")
+    }
+    
+    override fun cansee(){
+        println("yes can see")
+    }
+}
+
+fun main(){
+    val d=dog()
+    d.caneat()
+    d.cansee()
+}
