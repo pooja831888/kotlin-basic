@@ -1,0 +1,34 @@
+// Parent class
+open class Animal {
+    fun breathe() {
+        println("Animal is breathing")
+    }
+}
+
+// Interface 1
+interface CanRun {
+    fun run()
+}
+
+// Interface 2
+interface CanEat {
+    fun eat()
+}
+
+// Child class (Hybrid inheritance)
+class Dog : Animal(), CanRun, CanEat {
+    override fun run() {
+        println("Dog can run")
+    }
+
+    override fun eat() {
+        println("Dog can eat")
+    }
+}
+
+fun main() {
+    val d = Dog()
+    d.breathe()
+    d.run()
+    d.eat()
+}
